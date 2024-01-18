@@ -6,160 +6,154 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>205</width>
-    <height>534</height>
+    <width>457</width>
+    <height>509</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Вход в аккаунт</string>
+   <string>Регистрация</string>
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../output/main/_internal/management_resource_organization_team_talent_icon_260184.png</normaloff>../output/main/_internal/management_resource_organization_team_talent_icon_260184.png</iconset>
+    <normaloff>../images/management_resource_organization_team_talent_icon_260184.png</normaloff>../images/management_resource_organization_team_talent_icon_260184.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>20</y>
-      <width>221</width>
-      <height>31</height>
+      <y>80</y>
+      <width>141</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>26</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Логин</string>
+     <string>Имя</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>80</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>170</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>250</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_4">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>310</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>160</y>
-      <width>241</width>
-      <height>51</height>
+      <y>170</y>
+      <width>141</width>
+      <height>21</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>26</pointsize>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Фамилия</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Почта</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>310</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="text">
      <string>Пароль</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="login">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>90</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>18</pointsize>
-     </font>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="password">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>24</pointsize>
-     </font>
-    </property>
-    <property name="inputMask">
-     <string/>
-    </property>
-    <property name="echoMode">
-     <enum>QLineEdit::Password</enum>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="enter">
+   <widget class="QPushButton" name="alreadyregistered">
     <property name="geometry">
      <rect>
       <x>30</x>
-      <y>340</y>
-      <width>151</width>
-      <height>61</height>
+      <y>390</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
     </property>
-    <property name="font">
-     <font>
-      <pointsize>22</pointsize>
-     </font>
-    </property>
     <property name="text">
-     <string>Войти</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="message">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>310</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>10</pointsize>
-     </font>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">color: rgb(255, 0, 0);</string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
-   </widget>
-   <widget class="QCheckBox" name="rememberme">
-    <property name="geometry">
-     <rect>
-      <x>60</x>
-      <y>260</y>
-      <width>191</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Запомнить меня</string>
+     <string>Я уже зарегестрирован</string>
     </property>
    </widget>
    <widget class="QPushButton" name="registration">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>410</y>
-      <width>151</width>
-      <height>61</height>
+      <x>260</x>
+      <y>390</y>
+      <width>181</width>
+      <height>41</height>
      </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>11</pointsize>
-     </font>
     </property>
     <property name="text">
      <string>Зарегестрироваться</string>
@@ -171,7 +165,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>205</width>
+     <width>457</width>
      <height>21</height>
     </rect>
    </property>

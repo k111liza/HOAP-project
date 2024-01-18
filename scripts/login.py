@@ -6,6 +6,7 @@ class LoginWindow(WindowBase):
     def __init__(self):
         super().__init__('designs/login.ui')
         self.form.enter.clicked.connect(self.enter)
+        self.form.registration.clicked.connect(self.register)
 
     def enter(self):
         login = self.form.login.text()
@@ -20,4 +21,10 @@ class LoginWindow(WindowBase):
 
         else:
             self.form.message.setText('Неверный логин или пароль')
+    def register(self):
+        self.window.hide()
+        WindowBase.windows[2].open()
+
+
+
     
