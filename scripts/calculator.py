@@ -5,7 +5,9 @@ class CalculatorWindow(WindowBase):
         super().__init__('designs/design.ui')
         self.form.calculate.clicked.connect(self.calculation)
         self.form.exit.clicked.connect(self.exit)
-
+        self.form.metersdata.clicked.connect(self.open_meters_data)
+    def open_meters_data(self):
+        WindowBase.windows[3].open()
     def calculation(self):
         count = self.form.counts.value()
         price = self.form.price.value()
@@ -18,3 +20,4 @@ class CalculatorWindow(WindowBase):
         f = open(resource_path('../rememberme.txt'), 'w')
         f.write('')
         f.close()
+
