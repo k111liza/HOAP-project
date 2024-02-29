@@ -1,11 +1,20 @@
 from scripts.resource_path import resource_path
 from scripts.windows import WindowBase
+
+
 class CalculatorWindow(WindowBase):
     def __init__(self):
         super().__init__('designs/design.ui')
         self.form.calculate.clicked.connect(self.calculation)
         self.form.exit.clicked.connect(self.exit)
         self.form.metersdata.clicked.connect(self.open_meters_data)
+        self.form.Bill_history.clicked.connect(self.open_report_user)
+
+    def open(self, user_id):
+        user = WindowBase.db.get_user(user_id)
+        self.form.welcome.setText(f'Добро пожаловать, {user[1]} !')
+        self.window.show()
+
     def open_meters_data(self):
         WindowBase.windows[3].open()
     def calculation(self):
@@ -14,10 +23,13 @@ class CalculatorWindow(WindowBase):
         result = count * price
         self.form.result.setText(f'{result} руб')
 
+    def open_report_user(self):
+        WindowBase.windows[5].open()
+
     def exit(self):
         self.close()
         WindowBase.windows[0].open()
-        f = open(resource_path('../rememberme.txt'), 'w')
+        f = open(resource_path('rememberme.txt'), 'w')
         f.write('')
         f.close()
 
