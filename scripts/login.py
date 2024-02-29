@@ -15,12 +15,11 @@ class LoginWindow(WindowBase):
         data = WindowBase.db.get_login(login, password)
         if data:
             self.window.hide()
-            WindowBase.windows[1].form.welcome.setText(f'Добро пожаловать, {data[1]}')
-            WindowBase.windows[1].open()
             WindowBase.user_id = int(data[0])
+            WindowBase.windows[1].open(int(data[0]))
             self.form.loginerror.hide()
             if self.form.rememberme.isChecked():
-                f = open(resource_path('../rememberme.txt'), 'w')
+                f = open(resource_path('rememberme.txt'), 'w')
                 f.write(str(data[0]))
                 f.close()
         else:
