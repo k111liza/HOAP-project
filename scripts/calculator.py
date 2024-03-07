@@ -5,10 +5,13 @@ from scripts.windows import WindowBase
 class CalculatorWindow(WindowBase):
     def __init__(self):
         super().__init__('designs/design.ui')
-        self.form.calculate.clicked.connect(self.calculation)
         self.form.exit.clicked.connect(self.exit)
         self.form.metersdata.clicked.connect(self.open_meters_data)
         self.form.Bill_history.clicked.connect(self.open_report_user)
+        self.form.notifications.clicked.connect(self.open_notifications)
+        self.form.graphics.clicked.connect(self.open_graphic)
+
+
 
     def open(self, user_id):
         user = WindowBase.db.get_user(user_id)
@@ -32,4 +35,7 @@ class CalculatorWindow(WindowBase):
         f = open(resource_path('rememberme.txt'), 'w')
         f.write('')
         f.close()
-
+    def open_notifications(self):
+        WindowBase.windows[6].open()
+    def open_graphic(self):
+        WindowBase.windows[7].open()

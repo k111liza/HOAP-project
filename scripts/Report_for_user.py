@@ -11,9 +11,10 @@ class ReportForUserWindow(WindowBase):
         super().__init__('designs/table.ui')
         self.form.payment.clicked.connect(self.open_payment)
         self.form.tableWidget.cellClicked.connect(self.payment_button)
-        self.currentrow=None
+        self.currentrow = None
 
-    def open(self):
+    def update(self):
+
         showdata = WindowBase.db.show_data(WindowBase.user_id)
         self.form.tableWidget.setRowCount(0)
         self.form.tableWidget.setRowCount(len(showdata))
@@ -35,6 +36,9 @@ class ReportForUserWindow(WindowBase):
                 self.form.tableWidget.setItem(i, 4, QTableWidgetItem(
                     f""))
         self.form.tableWidget.setEditTriggers(QTableWidget.EditTrigger.NoEditTriggers)
+
+    def open(self):
+        self.update()
         self.form.payment.hide()
 
 

@@ -31,6 +31,12 @@ class DataBase:
         return self.cur.execute(f'SELECT * FROM Meters LEFT JOIN Repforuser on Meters.id = Repforuser.Meters_id WHERE Users_id = {user_id}').fetchall()
     def get_user(self, user_id):
         return self.cur.execute(f'SELECT * FROM Users WHERE id = {user_id}').fetchone()
+    def add_check(self, meters_id, paymentdate):
+        self.cur.execute(f"INSERT INTO Repforuser (Meters_id, Paymentdate) VALUES ('{ meters_id}', '{paymentdate}')")
+        self.con.commit()
+    def get_graphic(self, user_id):
+        return self.cur.execute(f"SELECT Month, Year, Cold_water, Hot_water, Electricity FROM Meters WHERE Users_id = {user_id} ORDER BY Year, Month").fetchall()
+
 
 
         

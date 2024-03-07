@@ -7,6 +7,12 @@ from PyQt6.QtWidgets import QMessageBox, QFileDialog
 
 from scripts.windows import WindowBase
 
+import requests
+
+import datetime
+
+
+
 months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
 class CheckWindow(WindowBase):
     def __init__(self):
@@ -66,7 +72,16 @@ class CheckWindow(WindowBase):
 
             returnValue = msgBox.exec()
         else:
-            #TODO save to database
+            url = f"http://127.0.0.1:80/uploadfile/{self.id}"
+
+            with open(self.filepath, "rb") as file:
+                files = {"file": (self.filepath, file, "multipart/form-data")}
+                response = requests.post(url, files=files)
+            WindowBase.db.add_check(self.id, datetime.datetime.now.strftime('%d.%m.%Y'))
+            WindowBase.windows[5].update()
+
+            print(response.status_code)
+            print(response.json())
             msgBox = QMessageBox()
             msgBox.setIcon(QMessageBox.Icon.Information)
             msgBox.setText('Данные успешно сохранены!')

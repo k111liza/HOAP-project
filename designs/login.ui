@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>209</width>
+    <width>267</width>
     <height>604</height>
    </rect>
   </property>
@@ -17,11 +17,14 @@
    <iconset>
     <normaloff>../output/main/_internal/management_resource_organization_team_talent_icon_260184.png</normaloff>../output/main/_internal/management_resource_organization_team_talent_icon_260184.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0.920455, y2:0.085, stop:0 rgba(0, 0, 88, 190), stop:1 rgba(43, 170, 132, 190));</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>90</x>
       <y>90</y>
       <width>91</width>
       <height>31</height>
@@ -32,6 +35,11 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Почта</string>
     </property>
@@ -39,7 +47,7 @@
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>90</x>
       <y>190</y>
       <width>91</width>
       <height>41</height>
@@ -50,6 +58,11 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Пароль</string>
     </property>
@@ -57,31 +70,40 @@
    <widget class="QLineEdit" name="login">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>140</y>
-      <width>171</width>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>18</pointsize>
+      <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255, 190);
+border-radius: 15px;</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="password">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>250</y>
-      <width>171</width>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
     <property name="font">
      <font>
-      <pointsize>24</pointsize>
+      <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255, 190);
+border-radius: 15px;
+</string>
     </property>
     <property name="inputMask">
      <string/>
@@ -93,7 +115,7 @@
    <widget class="QPushButton" name="enter">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>60</x>
       <y>350</y>
       <width>151</width>
       <height>61</height>
@@ -104,6 +126,10 @@
       <pointsize>20</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgb(197, 225, 255, 190);
+border-radius: 15px;</string>
+    </property>
     <property name="text">
      <string>Войти</string>
     </property>
@@ -111,7 +137,7 @@
    <widget class="QCheckBox" name="rememberme">
     <property name="geometry">
      <rect>
-      <x>60</x>
+      <x>120</x>
       <y>300</y>
       <width>151</width>
       <height>31</height>
@@ -122,6 +148,11 @@
       <pointsize>12</pointsize>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="text">
      <string>Запомнить меня</string>
     </property>
@@ -129,7 +160,7 @@
    <widget class="QPushButton" name="registration">
     <property name="geometry">
      <rect>
-      <x>30</x>
+      <x>60</x>
       <y>430</y>
       <width>151</width>
       <height>61</height>
@@ -145,6 +176,10 @@
       <kerning>true</kerning>
      </font>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(213, 255, 213, 190);
+border-radius: 15px;</string>
+    </property>
     <property name="text">
      <string>Зарегестрироваться</string>
     </property>
@@ -152,21 +187,24 @@
    <widget class="QLabel" name="loginerror">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>30</x>
       <y>30</y>
-      <width>191</width>
+      <width>221</width>
       <height>41</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>10</pointsize>
-      <weight>50</weight>
-      <bold>false</bold>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">color: rgb(222, 0, 0);</string>
+     <string notr="true">color: rgb(85, 0, 0);
+background-color: rgba(255, 255, 255, 0);
+border-color: rgba(255, 255, 255, 0);
+</string>
     </property>
     <property name="text">
      <string>Такой пользователь не найден</string>
@@ -178,7 +216,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>209</width>
+     <width>267</width>
      <height>21</height>
     </rect>
    </property>
