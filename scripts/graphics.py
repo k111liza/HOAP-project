@@ -3,7 +3,7 @@ import math
 from PyQt6.QtCore import Qt
 from PyQt6.QtGui import QPen, QPainter
 from PyQt6.QtWidgets import QTableWidgetItem, QAbstractItemView, QTableWidget, QGraphicsScene, QGraphicsLineItem, \
-    QWidget, QVBoxLayout
+    QWidget, QVBoxLayout, QHBoxLayout
 
 from scripts.resource_path import resource_path
 from scripts.windows import WindowBase
@@ -24,6 +24,13 @@ def update_month_number(month):
 class GraphicsWindow(WindowBase):
     def __init__(self):
         super().__init__('designs/graphics.ui')
+    def delite_allwidgets(self, layout):
+        while layout.count():
+            item = layout.takeAt(0)
+            widget = item.widget()
+
+            if widget:
+                widget.deleteLater()
     def open(self):
         result = WindowBase.db.get_graphic(WindowBase.user_id)
         seriesColdtWater = QtCharts.QLineSeries()
@@ -33,6 +40,9 @@ class GraphicsWindow(WindowBase):
         max_cw = 0
         max_hw = 0
         max_el = 0
+        self.delite_allwidgets(self.form.tab1layout)
+        self.delite_allwidgets(self.form.tab2layout)
+        self.delite_allwidgets(self.form.tab3layout)
 
         for month, year, _,_,_ in result:
             dates.append(f"{update_month_number(month)}.{year%100}")

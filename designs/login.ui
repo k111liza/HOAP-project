@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>267</width>
+    <width>264</width>
     <height>604</height>
    </rect>
   </property>
@@ -127,7 +127,7 @@ border-radius: 15px;
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color:rgb(197, 225, 255, 190);
+     <string notr="true">background-color:rgb(197, 225, 255);
 border-radius: 15px;</string>
     </property>
     <property name="text">
@@ -177,7 +177,7 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(213, 255, 213, 190);
+     <string notr="true">background-color: rgb(213, 255, 213);
 border-radius: 15px;</string>
     </property>
     <property name="text">
@@ -216,7 +216,7 @@ border-color: rgba(255, 255, 255, 0);
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>267</width>
+     <width>264</width>
      <height>21</height>
     </rect>
    </property>

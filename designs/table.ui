@@ -6,17 +6,24 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>797</width>
+    <height>601</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:reflect, x1:0, y1:1, x2:0.920455, y2:0.085, stop:0 rgba(0, 0, 88, 190), stop:1 rgba(43, 170, 132, 190));</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255, 190);
+border-radius: 15px;</string>
+      </property>
       <attribute name="horizontalHeaderCascadingSectionResizes">
        <bool>true</bool>
       </attribute>
@@ -67,7 +74,8 @@
        </font>
       </property>
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(143, 204, 126);</string>
+       <string notr="true">background-color: rgb(143, 204, 126);
+border-radius: 15px;</string>
       </property>
       <property name="text">
        <string>Оплатить</string>
@@ -81,7 +89,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>797</width>
      <height>21</height>
     </rect>
    </property>

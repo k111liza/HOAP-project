@@ -20,7 +20,7 @@
    <widget class="QLabel" name="month_bill">
     <property name="geometry">
      <rect>
-      <x>120</x>
+      <x>160</x>
       <y>30</y>
       <width>281</width>
       <height>41</height>
@@ -52,7 +52,7 @@ color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>../../../Downloads/photo1707833827.jpeg</pixmap>
+     <pixmap>../images/photo1707833827.jpeg</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -119,7 +119,7 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(149, 204, 255, 190);
+     <string notr="true">background-color: rgb(149, 204, 255);
 border-radius: 15px;</string>
     </property>
     <property name="text">
@@ -164,9 +164,8 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(255, 255, 255, 0);
-border-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 255);</string>
+     <string notr="true">background-color: rgba(255, 255, 255, 220);
+border-radius:15</string>
     </property>
     <property name="text">
      <string>Загрузить чек</string>
@@ -187,7 +186,7 @@ color: rgb(255, 255, 255);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(213, 255, 213, 190);
+     <string notr="true">background-color: rgb(213, 255, 213);
 border-radius: 15px;</string>
     </property>
     <property name="text">

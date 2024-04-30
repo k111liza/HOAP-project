@@ -20,7 +20,7 @@ class CheckWindow(WindowBase):
         self.form.download.clicked.connect(self.download)
         self.form.add_check.clicked.connect(self.open_document)
         self.form.save.clicked.connect(self.save)
-        self.filepath= None
+        self.filepath = None
     def open(self, price, month, year, id, name, surname):
         self.form.price.setText(str(price) + ' руб')
         self.form.month_bill.setText(f'Счет за {months[month]} {year}')
@@ -33,7 +33,7 @@ class CheckWindow(WindowBase):
 
     def download(self):
         fn = f"{self.id}_{self.surname}_{self.name}_{self.month}_{self.year}.xlsx"
-        file_url = "https://api.innoprog.ru:3000/files/materials/py_beg/py_beg4.pdf/" + fn
+        file_url = "https://api.innoprog.ru:3000/files/materials/py_beg/py_beg4.pdf/"
 
         try:
             downloads_folder = Path(os.path.expanduser("~")) / "Downloads"
@@ -72,22 +72,29 @@ class CheckWindow(WindowBase):
 
             returnValue = msgBox.exec()
         else:
-            url = f"http://127.0.0.1:80/uploadfile/{self.id}"
+            try:
+                url = f"http://127.0.0.1:80/uploadfile/{self.id}"
 
-            with open(self.filepath, "rb") as file:
-                files = {"file": (self.filepath, file, "multipart/form-data")}
-                response = requests.post(url, files=files)
-            WindowBase.db.add_check(self.id, datetime.datetime.now.strftime('%d.%m.%Y'))
-            WindowBase.windows[5].update()
+                with open(self.filepath, "rb") as file:
+                    files = {"file": (self.filepath, file, "multipart/form-data")}
+                    response = requests.post(url, files=files)
+                WindowBase.db.add_check(self.id, datetime.datetime.now())
+                WindowBase.windows[5].update()
 
-            print(response.status_code)
-            print(response.json())
-            msgBox = QMessageBox()
-            msgBox.setIcon(QMessageBox.Icon.Information)
-            msgBox.setText('Данные успешно сохранены!')
-            msgBox.setWindowTitle("Успешно!")
-            msgBox.setStandardButtons(QMessageBox.StandardButton.Ok)
+                msgBox = QMessageBox()
+                msgBox.setIcon(QMessageBox.Icon.Information)
+                msgBox.setText('Данные успешно сохранены!')
+                msgBox.setWindowTitle("Успешно!")
+                msgBox.setStandardButtons(QMessageBox.StandardButton.Ok)
 
-            returnValue = msgBox.exec()
-            self.window.hide()
+                returnValue = msgBox.exec()
+                self.window.hide()
+            except Exception as e:
+                msgBox = QMessageBox()
+                msgBox.setIcon(QMessageBox.Icon.Warning)
+                msgBox.setText('Error: ' + str(e))
+                msgBox.setWindowTitle("Error!")
+                msgBox.setStandardButtons(QMessageBox.StandardButton.Ok)
+
+                returnValue = msgBox.exec()
 
