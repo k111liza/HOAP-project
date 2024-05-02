@@ -12,9 +12,9 @@ The project's functions include storing information about users and the data the
 </div>
 <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Graph_hot_water.png" alt="Graph_hot_water" width="1200"/>
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/History_payments_.png" alt="History_payments" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Pay.png" alt="Pay" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment.png" alt="Payment" style="width: 36%; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/History_payments_.png" alt="History_payments" style="width: 50%; margin-right: 10px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Pay.png" alt="Pay" style="width: 50%; margin-right: 10px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment.png" alt="Payment" style="width: 50%; display: block;">
 </div>
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment_success.png" alt="Payment_success" style="width: 30%; margin-right: 10px; display: block;">
