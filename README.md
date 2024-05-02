@@ -8,7 +8,7 @@ The project's functions include storing information about users and the data the
 <div style="display: flex; justify-content: space-between;">
     <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Login.png" alt="Login" style="width: 33%; margin-right: 20px; height: 777px; display: block;">
     <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Registration.png" alt="Registration" style="width: 33%; margin-right: 20px; height: 777px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Success.png" alt="Success" style="width: 32%; height: 777px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Success.png" alt="Success" style="width: 33%; height: 777px; display: block;">
 </div>
 <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Graph_hot_water.png" alt="Graph_hot_water" width="1200"/>
 <div style="display: flex; justify-content: space-between;">
