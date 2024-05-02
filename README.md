@@ -6,30 +6,30 @@ The project's functions include storing information about users and the data the
 ## Screenshots
 <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/menu.png" alt="Menu" width="1200"/>
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Login.png" alt="Login" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Registration.png" alt="Registration" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Success.png" alt="Success" style="width: 36%; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Login.png" alt="Login" style="width: 33%; margin-right: 20px; height: 777px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Registration.png" alt="Registration" style="width: 33%; margin-right: 20px; height: 777px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/raw/master/images/results/Success.png" alt="Success" style="width: 33%; height: 777px; display: block;">
 </div>
 <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Graph_hot_water.png" alt="Graph_hot_water" width="1200"/>
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/History_payments_.png" alt="History_payments" style="width: 50%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Pay.png" alt="Pay" style="width: 50%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment.png" alt="Payment" style="width: 50%; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/History_payments_.png" alt="History_payments" style="width: 50%; margin-right: 20px; height: 550px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Pay.png" alt="Pay" style="width: 49%; margin-right: 20px; height: 550px; display: block;">
+    
+</div>
+<img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment.png" alt="Payment" width="1200"/>
+<div style="display: flex; justify-content: space-between;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment_success.png" alt="Payment_success" style="width: 50%; margin-right: 20px; height: 365px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment_download.png" alt="Payment_download" style="width: 49%; margin-right: 20px; height: 365px; display: block;">
 </div>
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment_success.png" alt="Payment_success" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Payment_download.png" alt="Payment_download" style="width: 30%; margin-right: 10px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Meter_readings.png" alt="Meter_readings" style="width: 50%; margin-right: 20px; height: 365px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Meter_success.png" alt="Meter_success" style="width: 49%; margin-right: 20px; height: 365px; display: block;">
 </div>
 <div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Meter_readings.png" alt="Meter_readings" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Meter_success.png" alt="Meter_success" style="width: 30%; margin-right: 10px; display: block;">
-</div>
-<div style="display: flex; justify-content: space-between;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notifications.png" alt="Notifications" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notifications_more_detailed.png" alt="Notifications_more_detailed" style="width: 30%; margin-right: 10px; display: block;">
-    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notofications_service.png" alt="Notofications_service" style="width: 36%; display: block;">
-</div>
-
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notifications.png" alt="Notifications" style="width: 50%; margin-right: 20px; height: 365px; display: block;">
+    <img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notifications_more_detailed.png" alt="Notifications_more_detailed" style="width: 49%; margin-right: 20px; height: 365px; display: block;">
+    
+<img src="https://github.com/k111liza/HOAP-project/blob/master/images/results/Notofications_service.png" alt="Notofications_service" width="1200"/>
 
 
 ## Frameworks
